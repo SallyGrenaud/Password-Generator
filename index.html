@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="icon" href="assests/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <h1 class="heading">PASSWORD GENERATOR</h1>
+            <div class="showPass">
+                <input type="text" placeholder="PASSWORD" class="pass" id="pass"></input>
+                <button class="bt" id="bt">
+                    <span class="copyButton" id="spanTxt"></span>
+                    <img src="assests/copy.svg" class="imageCopy">
+                    <!-- <i class="fa-solid fa-check" style="color: #1ddee2;"></i> -->
+                    
+                </button>
+            </div>
+            <div class="showPass context">
+                <div class="length-container">
+
+                    <h2 class="sub-heading"> Password Length</h2>
+                    <p class="length" id="length">0</p>
+                </div>
+
+                <input type="range" id="slider" min="1" max="20" class="slider"></input>
+                <div class="checkbox">
+                    <div class="contbox">
+                        <input type="checkbox" id="uppercase" checked> <label for="uppercase">Includes Uppercase letters</label></input>
+
+                    </div>
+                    <div class="contbox">
+
+                        <input type="checkbox" id="lowercase">
+                        <label for="lowercase">
+    
+                            Includes Lowercase letters
+                        </label>
+                        </input>
+                    </div>
+                    <div class="contbox">
+                        
+                        <input type="checkbox" id="numbers">
+                        <label for="numbers">
+    
+                            Includes Numbers
+                        </label>
+                        </input>
+                    </div>
+                    <div class="contbox">
+                        
+                        <input type="checkbox" id="symbols">
+                        <label for="symbols">
+                            Includes Symbols
+    
+                        </label>
+                        </input>
+                    </div>
+
+                </div>
+
+                <div class="strength-container">
+                    <p> Strength</p>
+                    <div id="indicator" class="indicator"></div>
+                </div>
+
+                <button class="generateButton" id="generateButton">Generate Password</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js">
+
+    </script>
+    <!-- <script src="https://kit.fontawesome.com/04b27049f9.js" crossorigin="anonymous"></script> -->
+</body>
+</html>
